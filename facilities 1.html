@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facilities – Loving Homes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* NAVBAR */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar {
+            background-color: #5b5b5b;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 60px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            font-size: 22px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .page-hero {
+            margin-top: 70px;
+            height: 35vh;
+            background-image: linear-gradient(
+                rgba(0,0,0,0.35),
+                rgba(0,0,0,0.35)
+            ),
+            url("https://images.unsplash.com/photo-1537151625747-768eb6cf92b6?q=80&w=1200&auto=format&fit=crop");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            padding: 0 20px;
+        }
+
+        .page-hero h1 {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        .page-hero p {
+            font-size: 18px;
+        }
+
+        /* CONTENT */
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 20px 60px;
+        }
+
+        .intro {
+            font-size: 18px;
+            color: #816d6d;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .facility-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .facility-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .facility-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .facility-body {
+            padding: 16px 18px 18px;
+        }
+
+        .sfacility-body h3 {
+            font-size: 20px;
+            margin-bottom: 6px;
+            color: #706565;
+        }
+
+        .facility-body p {
+            font-size: 15px;
+            color: #e4d3d3;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 900px) {
+            .facility-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                padding: 14px 20px;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+
+            .nav-links {
+                gap: 12px;
+                font-size: 14px;
+            }
+
+            .facility-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">Loving Homes</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="facilities 1.html">Facilities</a>
+            <a href="packages 1.html">Packages</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact 1.html">Contact us</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div>
+        <h1>Our Facilities</h1>
+        <p>Everything your dog needs for a safe, fun and relaxing stay.</p>
+    </div>
+</section>
+
+<main>
+    <p class="intro">
+        Loving Homes is designed to feel like a modern, cosy villa for dogs.
+        Each space is carefully planned to provide comfort, safety and enrichment – just like a real holiday.
+    </p>
+
+    <div class="facility-grid">
+
+        <article class="facility-card">
+            <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=800&auto=format&fit=crop"
+                 alt="Dog in a cosy room">
+            <div class="facility-body">
+                <h3>Grooming parlour and spa</h3>
+                <p>
+                    A calm, hygienic space where every dog enjoys gentle bathing, brushing, nail trimming and coat care. Spa-style treatments, relaxing massages and drying keep your furry friend fresh, clean and comfortable after each stay.
+
+                </p>
+            </div>
+        </article>
+
+        <article class="facility-card">
+            <img src="https://images.unsplash.com/photo-1762547450600-5a57ea7abc54?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 alt="Dogs playing outside">
+            <div class="facility-body">
+                <h3>Rooms with Underfloor Heating</h3>
+                <p>
+                   Warm, cosy suites equipped with underfloor heating to keep your dog comfortable during rest and sleep, creating a calm and home-like environment in any weather.
+                </p>
+            </div>
+        </article>
+
+        <article class="facility-card">
+            <img src="https://images.unsplash.com/photo-1703828654117-112baa788e51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 alt="Dog being groomed">
+            <div class="facility-body">
+                <h3>Chauffeur ‘Collect & Return’ Service</h3>
+                <p>
+                    A safe, convenient pick-up and drop-off option where your dog is transported comfortably by our trained chauffeur directly to and from your home.
+                </p>
+            </div>
+        </article>
+
+        <article class="facility-card">
+            <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?q=80&w=800&auto=format&fit=crop"
+                 alt="Veterinarian with dog">
+            <div class="facility-body">
+                <h3>24/7 Vet Support</h3>
+                <p>
+                    Partnership with local veterinary clinics and on-call professionals for any health needs.
+                </p>
+            </div>
+        </article>
+
+        <article class="facility-card">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=800&auto=format&fit=crop"
+                 alt="Dog eating from bowl">
+            <div class="facility-body">
+                <h3>Secure outdoor paddocks</h3>
+                <p>
+                    Spacious, fenced outdoor areas where dogs can run, play and explore safely under supervision.
+                </p>
+            </div>
+        </article>
+
+        <article class="facility-card">
+            <img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?q=80&w=800&auto=format&fit=crop"
+                 alt="Staff playing with dog">
+            <div class="facility-body">
+                <h3>Human Company & Cuddles</h3>
+                <p>
+                    Our team spends one-on-one time with each guest so they feel secure, noticed and loved.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</main>
+
+</body>
+</html>

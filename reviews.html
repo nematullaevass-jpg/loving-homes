@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reviews – Loving Homes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* NAVBAR */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar {
+            background-color: #5b5b5b;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 60px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            font-size: 22px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .page-hero {
+            margin-top: 70px;
+            padding: 40px 20px 24px;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .page-hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .page-hero p {
+            font-size: 18px;
+            color: #666666;
+        }
+
+        /* REVIEWS GRID */
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 20px 60px;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .review-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .review-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .review-content {
+            padding: 16px 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+
+        .dog-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333333;
+        }
+
+        .owner-name {
+            font-size: 14px;
+            color: #777777;
+        }
+
+        .stars {
+            color: #f4b400;
+            font-size: 16px;
+        }
+
+        .review-text {
+            font-size: 15px;
+            color: #555555;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 900px) {
+            .reviews-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                padding: 14px 20px;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+
+            .nav-links {
+                gap: 12px;
+                font-size: 14px;
+            }
+
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">Loving Homes</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="facilities1.html">Facilities</a>
+            <a href="packages1.html">Packages</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact 1.html">Contact us</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <h1>Happy Tails & Reviews</h1>
+    <p>Real stories from owners who trust Loving Homes with their furry family members.</p>
+</section>
+
+<main>
+    <div class="reviews-grid">
+
+        <article class="review-card">
+            <img src="https://images.unsplash.com/photo-1655899307814-5210d02b9e05?q=80&w=402&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 alt="Golden retriever dog">
+            <div class="review-content">
+                <div class="dog-name">Bella – Golden Retriever</div>
+                <div class="owner-name">Owner: Aisha, Maldives</div>
+                <div class="stars">★★★★★</div>
+                <p class="review-text">
+                    “Bella is usually shy in new places, but at Loving Homes she relaxed on the first day.
+                    I received photo updates, and she came back home calm, clean and very happy.”
+                </p>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <img src="https://plus.unsplash.com/premium_photo-1707410049230-289e92a3c945?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 alt="Small dog sitting on a sofa">
+            <div class="review-content">
+                <div class="dog-name">Milo – Toy Poodle</div>
+                <div class="owner-name">Owner: Daniel, UK</div>
+                <div class="stars">★★★★★</div>
+                <p class="review-text">
+                    “We travel often and needed a place that feels like home for Milo.
+                    The staff followed his routine perfectly and even remembered his favourite toy.”
+                </p>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <img src="https://media.istockphoto.com/id/2184260648/photo/border-collie-with-owner-training-in-a-public-park.jpg?s=1024x1024&w=is&k=20&c=j-7s36MQn7Jdp0SjqKcfpesMDPGd0Q8gajwcUP_-3kM="
+                 alt="Two dogs playing outside">
+            <div class="review-content">
+                <div class="dog-name">Coco & Max – Siblings</div>
+                <div class="owner-name">Owner: Leena, India</div>
+                <div class="stars">★★★★☆</div>
+                <p class="review-text">
+                    “Our dogs love the playtime sessions and outdoor walks.
+                    We feel safe leaving them here because the team really understands their different personalities.”
+                </p>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <img src="https://plus.unsplash.com/premium_photo-1667729435876-3a83af97f536?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 alt="Dog with a towel after grooming">
+            <div class="review-content">
+                <div class="dog-name">Luna – Husky</div>
+                <div class="owner-name">Owner: Ahmed, UAE</div>
+                <div class="stars">★★★★★</div>
+                <p class="review-text">
+                    “Luna came back from Loving Homes smelling amazing and with such a shiny coat.
+                    The grooming service and friendly staff are a big plus for us.”
+                </p>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <img src="https://images.unsplash.com/photo-1586917138540-f1490b02f205?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmVhZ2xlfGVufDB8fDB8fHww"
+                 alt="Dog running on the beach">
+            <div class="review-content">
+                <div class="dog-name">Rocky – Beagle</div>
+                <div class="owner-name">Owner: Sofia, Italy</div>
+                <div class="stars">★★★★★</div>
+                <p class="review-text">
+                    “Rocky is full of energy and needs a lot of play. The team at Loving Homes kept him busy and happy.
+                    He almost didn’t want to leave when we picked him up!”
+                </p>
+            </div>
+        </article>
+
+        <article class="review-card">
+            <img src="https://images.unsplash.com/photo-1560743173-567a3b5658b1?q=80&w=800&auto=format&fit=crop"
+                 alt="Owner hugging dog">
+            <div class="review-content">
+                <div class="dog-name">Nala – Mixed Breed</div>
+                <div class="owner-name">Owner: Mariam, Saudi Arabia</div>
+                <div class="stars">★★★★☆</div>
+                <p class="review-text">
+                    “For us, communication is very important. The staff answered quickly, shared videos,
+                    and made us feel that Nala was surrounded by love the whole time.”
+                </p>
+            </div>
+        </article>
+
+    </div>
+</main>
+
+</body>
+</html>

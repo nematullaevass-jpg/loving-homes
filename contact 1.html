@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us – Loving Homes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* NAVBAR */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar {
+            background-color: #5b5b5b;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 60px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            font-size: 22px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+
+        .page-hero {
+            margin-top: 70px;
+            padding: 40px 20px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .page-hero h1 {
+            font-size: 34px;
+            margin-bottom: 8px;
+            color: #333333;
+        }
+
+        .page-hero p {
+            font-size: 18px;
+            color: #666666;
+        }
+
+        /* CONTACT SECTION */
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 32px 20px 60px;
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 30px;
+        }
+
+        .contact-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            padding: 24px 22px 26px;
+        }
+
+        .contact-card h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #333333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+            font-size: 15px;
+            font-family: inherit;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .btn {
+            margin-top: 8px;
+            font-size: 16px;
+            padding: 12px 20px;
+            border-radius: 999px;
+            border: 2px solid #5b5b5b;
+            background-color: #5b5b5b;
+            color: #ffffff;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #ffffff;
+            color: #5b5b5b;
+        }
+
+        .info-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            padding: 24px 22px 26px;
+            font-size: 15px;
+            color: #555555;
+            line-height: 1.7;
+        }
+
+        .info-card h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #333333;
+        }
+
+        @media (max-width: 800px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                padding: 14px 20px;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+
+            .nav-links {
+                gap: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">Loving Homes</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="facilities1.html">Facilities</a>
+            <a href="packages1.html">Packages</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact1.html">Contact us</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <h1>Contact Us</h1>
+    <p>Send us a message to book a stay or ask any questions about Loving Homes.</p>
+</section>
+
+<main>
+    <section class="contact-card">
+        <h2>Send us a message</h2>
+
+        <form action="#" method="post">
+            <div>
+                <label for="name">Your Name</label>
+                <input id="name" type="text" placeholder="Enter your full name">
+            </div>
+
+            <div>
+                <label for="email">Email Address</label>
+                <input id="email" type="email" placeholder="name@example.com">
+            </div>
+
+            <div>
+                <label for="dog">Dog’s Name & Breed</label>
+                <input id="dog" type="text" placeholder="E.g. Bella – Golden Retriever">
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Tell us about the dates and type of stay you need..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit enquiry</button>
+        </form>
+    </section>
+
+    <aside class="info-card">
+        <h2>Contact Details</h2>
+
+        <div class="info-item">
+            <span class="info-label">Phone:</span><br>
+            +960 123 4567
+        </div>
+
+        <div class="info-item">
+            <span class="info-label">Email:</span><br>
+            hello@lovinghomes.dog
+        </div>
+
+        <div class="info-item">
+            <span class="info-label">Location:</span><br>
+            Island View Road, Malé, Maldives
+        </div>
+
+        <div class="info-item">
+            <span class="info-label">Opening Hours:</span><br>
+            Daily: 8:00 – 20:00<br>
+            Check-in & Check-out by appointment.
+        </div>
+    </aside>
+</main>
+
+</body>
+</html>
