@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ – Loving Homes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: #f5f5f5;
+            color: #333333;
+        }
+
+        /* NAVBAR (как на других страницах) */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar {
+            background-color: #5b5b5b;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 60px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            font-size: 22px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* HERO */
+        .page-hero {
+            margin-top: 70px;
+            padding: 40px 20px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .page-hero h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+            color: #4f463c;
+        }
+
+        .page-hero p {
+            font-size: 18px;
+            color: #666666;
+        }
+
+        /* FAQ VERTICAL CARDS */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 32px 20px 60px;
+        }
+
+        .faq-card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+            padding: 18px 22px;
+            margin-bottom: 18px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            cursor: default;
+        }
+
+        .faq-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: 600;
+            color: #4f463c;
+            margin-bottom: 4px;
+        }
+
+        .faq-answer {
+            font-size: 15px;
+            color: #555555;
+            line-height: 1.7;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, opacity 0.35s ease;
+        }
+
+        .faq-card:hover .faq-answer {
+            max-height: 200px; /* достаточно для текста */
+            opacity: 1;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                padding: 14px 20px;
+            }
+
+            .logo {
+                font-size: 24px;
+            }
+
+            .nav-links {
+                gap: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">Loving Homes</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="facilities 1.html">Facilities</a>
+            <a href="packages 1.html">Packages</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="contact 1.html">Contact us</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <h1>Frequently Asked Questions</h1>
+    <p>Hover over each question to see the answer.</p>
+</section>
+
+<main>
+
+    <article class="faq-card">
+        <div class="faq-question">What do I need to bring for my dog?</div>
+        <div class="faq-answer">
+            You can bring your dog’s favourite toys, blanket and any food or medication they need.
+            We provide bowls, beds and all basic essentials during their stay.
+        </div>
+    </article>
+
+    <article class="faq-card">
+        <div class="faq-question">Do you accept dogs with special needs?</div>
+        <div class="faq-answer">
+            Yes. We welcome dogs with medical, behavioural or dietary needs.
+            Please inform us in advance so we can prepare the right care plan.
+        </div>
+    </article>
+
+    <article class="faq-card">
+        <div class="faq-question">How often will my dog be walked?</div>
+        <div class="faq-answer">
+            Walks depend on the chosen package – from two walks per day in Day packages
+            up to four walks and extra activities in Premium options.
+        </div>
+    </article>
+
+    <article class="faq-card">
+        <div class="faq-question">Will I receive photo or video updates?</div>
+        <div class="faq-answer">
+            Yes, we send regular photos and short updates for Premium and Custom stays
+            so you can see how relaxed and happy your dog is.
+        </div>
+    </article>
+
+    <article class="faq-card">
+        <div class="faq-question">Are dogs supervised at night?</div>
+        <div class="faq-answer">
+            Our team monitors the suites 24/7. We check on each guest regularly and are always nearby
+            if a dog needs attention or extra comfort.
+        </div>
+    </article>
+
+    <article class="faq-card">
+        <div class="faq-question">Are the outdoor paddocks secure?</div>
+        <div class="faq-answer">
+            All outdoor areas are fully fenced, locked and supervised.
+            Only compatible dogs play together, and always under staff supervision.
+        </div>
+    </article>
+
+    <article class="faq-card">
+        <div class="faq-question">How can I book a stay?</div>
+        <div class="faq-answer">
+            You can submit a request through the Contact page, email us or call us directly.
+            We’ll confirm dates, package type and any special requirements for your dog.
+        </div>
+    </article>
+
+</main>
+
+</body>
+</html>
